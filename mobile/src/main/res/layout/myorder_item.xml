@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        card_view:cardBackgroundColor="#262626"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="0dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.65"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/img_thl"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/res_lys"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:layout_marginLeft="310dp"
+            android:background="@android:color/transparent">
+
+            <pos.sd.omakasa.Utils.TextViewPlus
+                android:id="@+id/oName"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center"
+                android:maxLines="3"
+                android:paddingLeft="10dp"
+                foo:customFont="avenri_bold.ttc"
+                android:text="this us make lm"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <pos.sd.omakasa.Utils.TextViewPlus
+                android:id="@+id/lprice"
+                android:layout_width="305dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/oName"
+                android:layout_marginLeft="14dp"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="3.00"
+                foo:customFont="avenri_bold.ttc"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/view_var"
+                style="@style/tst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/oName"
+                android:layout_toRightOf="@+id/lprice"
+                android:background="@drawable/rounded_textview"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <!--<EditText-->
+            <!--style="@style/tst"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="150dp"-->
+            <!--/>-->
+            <EditText
+                android:id="@+id/edNum"
+                style="@style/tst"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/view_var"
+                android:layout_below="@+id/oName"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:textSize="50sp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:numeric="integer"
+                android:padding="1dp"
+                android:text="1"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/newww"
+                style="@style/tst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oName"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@+id/edNum"
+                android:background="@drawable/rounded_textview"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/qty"-->
+            <!--style="@style/tst"-->
+            <!--android:layout_toRightOf="@+id/lprice"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:text="Qty:"-->
+            <!--android:textColor="@color/ind"-->
+            <!--android:textStyle="italic" />-->
+
+
+
+
+
+
+            <!--<ToggleButton-->
+            <!--android:id="@+id/chkState"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!-- -->
+            <!--android:textOff="Takeaway"-->
+            <!--android:textOn="eat in"/>-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="210dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Switch
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mySwitch"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="180dp"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:textColor="@color/white"
+                    android:text="EATIN"
+                    android:textSize="@dimen/twl_lower"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/img_thnail"
+                    android:layout_width="250dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/rcroenr_blc"
+
+                    android:drawableLeft="@drawable/trash"
+                    android:textColor="@color/red"
+                    android:textSize="26sp"
+                    android:drawablePadding="30dp"
+                    android:paddingLeft="30dp"
+                    android:gravity="left|center"
+                    android:text="@string/remve"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lir221"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="205dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--<ToggleButton-->
+            <!--android:id="@+id/mySwitch"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:gravity="left|center"-->
+            <!--android:textOff="Eat in"-->
+            <!--android:textOn="Takeaway"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone" />-->
+
+            <TextView
+                style="@style/btn"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/riple"
+
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Remark"
+                android:textColor="@color/text_secondary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mAdd"
+                style="@style/btn"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/riple"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:text="Add On"
+                android:textColor="@color/text_secondary"
+                android:visibility="visible" />
+
+            <CheckedTextView
+                android:id="@+id/chkIt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/riple"
+                android:checked="false"
+                android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:singleLine="false"
+                android:textColor="@color/text_secondary"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/fired"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/riple"
+                android:checked="false"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:singleLine="false"
+                android:text="Fired Order"
+                android:textColor="@color/text_secondary"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linrout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="300dp"
+
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/itmMode"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="1dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

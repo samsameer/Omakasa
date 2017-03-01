@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+            android:text="@string/server"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+
+            android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_host"
+        style="@style/mtch"
+        >
+
+        <EditText
+            android:id="@+id/input_host"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp"
+            android:singleLine="true"
+            android:text="192.168.1.10"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:hint="@string/host" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_port"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_port"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="80"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="PORT" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_config"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_cofig"
+                android:singleLine="true"
+                android:text="DBA"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="@string/suname" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="#DBA!"
+                android:layout_height="fill_parent"
+                android:hint="@string/spaswd" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_reg"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_reg"
+                android:singleLine="true"
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="@string/regcode" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_cmp"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_cmp"
+                android:singleLine="true"
+                android:text="01"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="@string/cmpcode" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_out"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/input_out"
+                android:text="WA"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="OUTLET CODE" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fffinput_layout_out"
+            style="@style/mtch"
+            >
+
+            <EditText
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/mealid"
+                android:text="T1"
+
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:hint="OUTLET CODE" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:weightSum="2"
+    android:layout_margin="10dp"
+    android:layout_height="100dp">
+
+    <Button
+        android:id="@+id/canMit"
+        android:layout_weight="1"
+        android:text="CANCEL"
+        android:layout_margin="10dp"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <Button
+        android:id="@+id/subMit"
+        android:layout_weight="1"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="200dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

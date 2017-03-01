@@ -1,0 +1,31 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="acmargin">44sp</dimen>
+    <dimen name="eigtn_lower">34sp</dimen>
+    <dimen name="ein_lower">30sp</dimen>
+    <dimen name="sxtn_lower">20sp</dimen>
+    <dimen name="twl_lower">20sp</dimen>
+    <dimen name="min_hun_height">210dp</dimen>
+    <dimen name="four_lower">22sp</dimen>
+    <dimen name="min_thr_height">600dp</dimen>
+    <dimen name="min_thrft_height">350dp</dimen>
+    <dimen name="min_onesebn_height">340dp</dimen>
+    <dimen name="min_onehun_height">100dp</dimen>
+    <dimen name="min_twohun_height">400dp</dimen>
+    <dimen name="min_thrrr_height">540dp</dimen>
+    <dimen name="min_one9_height">320dp</dimen>
+    <dimen name="mf_45">80dp</dimen>
+    <dimen name="min_osixeight">100dp</dimen>
+    <dimen name="mf_30">60dp</dimen>
+    <dimen name="onfifty">250dp</dimen>
+    <dimen name="onfit_onehun_height">150dp</dimen>
+    <dimen name="mf_10">20dp</dimen>
+    <dimen name="mf_35">70dp</dimen>
+    <dimen name="t_lower">44sp</dimen>
+    <item name="flt_frtnn" type="dimen" format="float">32.00</item>
+    <item name="flt_twlnn" type="dimen" format="float">20.00</item>
+
+
+</resources>

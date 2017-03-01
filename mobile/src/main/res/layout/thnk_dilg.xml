@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tickj"
+
+
+        />
+    <pos.sd.omakasa.Utils.TextViewPlus
+    android:layout_width="800dp"
+    android:layout_height="250dp"
+    android:text="@string/ords"
+    android:layout_marginTop="100dp"
+    android:layout_gravity="center"
+        foo:customFont="avenri_bold.ttc"
+    android:textColor="@android:color/black"
+    android:textSize="60sp"
+    android:textStyle="bold"
+    android:typeface="sans"
+    android:gravity="center"
+    />
+
+    <pos.sd.omakasa.Utils.TextViewPlus
+        android:layout_width="fill_parent"
+        android:layout_height="650dp"
+        android:text="@string/plzup"
+        android:textColor="@color/eoB"
+        android:textSize="95sp"
+        foo:customFont="avenir_medium.ttc"
+        android:textStyle="normal"
+        android:gravity="top|center_horizontal"
+        />
+
+
+    <Button
+        android:layout_width="500dp"
+        android:text="OK"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/chkmr"
+        android:textSize="60sp"
+        android:drawablePadding="30dp"
+        android:paddingLeft="180dp"
+        android:gravity="left|center"
+        android:textColor="@color/white"
+        android:background="@drawable/r_corner_white_yes"
+        android:layout_height="130dp" />
+
+</LinearLayout>

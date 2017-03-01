@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:id="@+id/rtclick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="@color/black_overlay">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="185dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_secondary">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#7CC8AF"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/bsk" />
+
+                        <TextView
+                            android:id="@+id/counter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="55dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="47dp"
+                            android:background="@drawable/redcircle"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/hidec"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="15dp"
+                        android:drawableRight="@drawable/left"
+                        android:gravity="right|center"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="20dp"
+                        android:text="HIDE CART"
+                        android:textColor="@android:color/white"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="#262626">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/rel"
+                android:layout_below="@+id/prev"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/textts"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/rel"
+                android:layout_below="@+id/prev"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="242dp"
+                    android:layout_marginTop="572dp"
+                    android:src="@drawable/empoty" />
+
+                <pos.sd.omakasa.Utils.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empty"
+                    android:layout_marginTop="25dp"
+
+                    android:gravity="center_horizontal|center"
+                    android:padding="20dp"
+                    android:text="Cart is empty, select an item \n back at the menu."
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp"
+                    foo:customFont="avenir_medium.ttc" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="1270dp"
+                    android:src="@drawable/cart_bck" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="fill_parent"
+                android:layout_height="270dp"
+                android:layout_alignParentBottom="true">
+
+
+                <pos.sd.omakasa.Utils.TextViewPlus
+                    android:id="@+id/ttl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="0dp"
+                    android:text="Cart Total: $ "
+                    android:textColor="@color/white"
+                    android:textSize="48sp"
+                    foo:customFont="avenri_bold.ttc" />
+
+                <Button
+                    android:id="@+id/fsubmit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/ttl"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/r_corner_white_no"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/chkmr"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="190dp"
+                    android:text="@string/cnfmbtn"
+                    android:textColor="@color/white"
+                    android:textSize="46sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mes"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="300dp"
+                android:background="@android:color/black"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/bck"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="100dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="30dp"
+                    android:text="@string/bck"
+                    android:textColor="@color/textcln"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/mre"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:paddingRight="50dp"
+                    android:text="@string/mre"
+                    android:textColor="@color/yesbtn"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <pos.sd.omakasa.Utils.TextViewPlus
+                android:id="@+id/prev"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/cartheader"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="\n    Preview &amp; Edit \n    Your Cart"
+                android:textColor="#979797"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                foo:customFont="avenr_regular.ttf" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

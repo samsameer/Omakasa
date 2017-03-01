@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#EA7576</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="yesbtn">#44A1A1</color>
+    <color name="textcln">#687173</color>
+    <color name="redcln">#EE585B</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="numbr">#FCAB99</color>
+    <color name="bg_clr">#DCEDED</color>
+    <color name="bg_btn">#3BA9A9</color>
+    <color name="dr_btn">#C1DDDD</color>
+</resources>

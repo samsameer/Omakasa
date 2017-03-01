@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="eoB" type="color">#424242</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#C63D0F</item>
+    <item name="green" type="color">#9E9D24</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#EE585B</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#CFD8DC</item>
+    <item name="darkgreen" type="color">#FFC107</item>
+    <item name="darkorange" type="color">#f39c12</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <item name="brown" type="color">#3E2723</item>
+    <item name="btn" type="color">#8D6E63</item>
+    <item name="brwn_8" type="color">#795548</item>
+    <item name="gold" type="color">#FFD700</item>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="prry">#88d1c9c9</color>
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#8BC34A</color>
+    <color name="accent">#EA7576</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#000000</color>
+    <color name="tabsScrollColor">#daa520</color>
+    <color name="pink">#FF4081</color>
+    <color name="ind">#ABAC40</color>
+    <color name="indBD">#FDF3E7</color>
+    <color name="ripple">#F06292</color>
+    <color name="indigo">#7E8F7C</color>
+    <color name="md">#827717</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="selected_txt">#5d6266</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="txtgray">#F37A35</color>
+    <color name="tgray">#c0000000</color>
+    <color name="tgraddy">#c0000000</color>
+
+
+    <color name="accent_dark">#ff2929</color>
+    <color name="secondary_text">#727272</color>
+    <color name="white_overlay">#F3F3F3</color>
+
+
+</resources>

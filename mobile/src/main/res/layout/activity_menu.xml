@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@android:color/black" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginLeft="200dp"-->
+    <!--android:gravity="left|center"-->
+    <!--android:text="SELECT YOUR ITEM"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:typeface="sans" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/vwo"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--android:background="@android:color/black" />-->
+    <include
+        android:id="@+id/vwo"
+        layout="@layout/topbar_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/mes"
+        android:layout_below="@+id/vwo"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/titl"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_margin="1dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dtile"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/myview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:visibility="gone" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mes"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/vwob"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/bck"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="@string/bck"
+            android:textColor="@color/textcln"
+            android:textSize="34sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/mre"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:paddingRight="50dp"
+            android:text="@string/mre"
+            android:textColor="@color/yesbtn"
+            android:textSize="34sp"
+            android:textStyle="normal" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/vwob"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal">
+
+            <Button
+
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/home"
+                android:layout_width="340dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp"
+                android:background="@color/red"
+                android:drawableLeft="@drawable/blsl"
+                android:drawablePadding="9dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left|center"
+                android:paddingLeft="35dp"
+                android:text="CALL HELP"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/resrt"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/rsrt"
+                android:drawablePadding="9dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left|center"
+                android:paddingLeft="35dp"
+                android:text="Restart"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+            <RelativeLayout
+                android:id="@+id/cunttr"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:background="@color/yesbtn" >
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="70dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/bsk"
+                    android:layout_height="80dp" />
+           <TextView
+               android:id="@+id/count"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_marginLeft="40dp"
+               android:textSize="18sp"
+               android:text="0"
+               android:gravity="center"
+               android:background="@drawable/redcircle"
+               android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+
+
+
+
+            <Button
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/viewo"
+                android:layout_width="350dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/yesbtn"
+                android:gravity="left|center"
+                android:text="VIEW  CART"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:drawableEnd="@drawable/right"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+
+            layout="@layout/activity_vieworder" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/text_secondary"
+    android:weightSum="1"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.23"
+        android:weightSum="1"
+        android:layout_margin="5dp"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/ril_01"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="0dp"
+            android:background="@drawable/bfg"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:text="ITALIAN"
+                style="@style/mther"
+              />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ril_02"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/sharing_friedchix"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:text="FRIED CHICKEN "
+                style="@style/mther"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.23"
+        android:layout_margin="5dp"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/ril_03"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/sharing_jap"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:text="JAPANESE"
+                style="@style/mther"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ril_04"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/sharing_kor"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="KOREAN"
+                style="@style/mther"
+                />
+            </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.23"
+        android:layout_margin="5dp"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/ril_05"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/sharing_rotisserie"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="ROTISSERIE"
+                style="@style/mther"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ril_06"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/sharing_taiwanese"
+
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="TAIWANESE"
+                style="@style/mther"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="Please choose the truck to order."
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
